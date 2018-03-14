@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KTT.YEZ</string>
+    <string name="welcome">Welcome</string>
+    <string name="balance_currency">$</string>
+    <string name="balance_amount">Tochukwu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Dashboard</string>
+    <string name="cart">Cart</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+</resources>
