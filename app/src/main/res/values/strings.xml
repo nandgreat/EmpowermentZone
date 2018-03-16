@@ -9,4 +9,10 @@
     <string name="cart">Cart</string>
     <string name="messages">Messages</string>
     <string name="profile">Profile</string>
+    <string name="powered_by_altitude_technology">Power by Altitude Technology</string>
+
+    <string name="alert_dialog_title">Please Select</string>
+    <string name="positive_button_text">Select</string>
+    <string name="negative_button_text">Cancel</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.altitude.nandom.empowermentzone.fragment;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import com.altitude.nandom.empowermentzone.R;
 import com.altitude.nandom.empowermentzone.profile_fragment.AdditionalDetails;
 import com.altitude.nandom.empowermentzone.profile_fragment.BasicInfo;
+import com.altitude.nandom.empowermentzone.profile_fragment.WorkExperience;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
 
@@ -30,7 +32,6 @@ public class ProfileFragment extends Fragment {
         return fragment;
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -39,17 +40,7 @@ public class ProfileFragment extends Fragment {
 
         ButterKnife.bind(this, view);
 
-//        final Toolbar toolbar = mViewPager.getToolbar();
-
         mViewPager = (MaterialViewPager) view.findViewById(R.id.materialViewPager);
-
-        Toast.makeText(getContext(), "This is strange", Toast.LENGTH_SHORT).show();
-
-//        if(toolbar != null){
-//
-//        }
-//
-//        toolbar.setTitleTextColor(Color.WHITE);
 
         mViewPager.getPagerTitleStrip().setAllCaps(false);
         mViewPager.getPagerTitleStrip().setTextColor(Color.WHITE);
@@ -57,13 +48,13 @@ public class ProfileFragment extends Fragment {
         mViewPager.getViewPager().setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                switch (position % 4){
+                switch (position % 4) {
                     case 0:
                         return BasicInfo.newInstance();
                     case 1:
                         return AdditionalDetails.newInstance();
                     case 2:
-                        return BasicInfo.newInstance();
+                        return WorkExperience.newInstance();
                     case 3:
                         return BasicInfo.newInstance();
                     default:
@@ -78,7 +69,7 @@ public class ProfileFragment extends Fragment {
 
             @Override
             public CharSequence getPageTitle(int position) {
-                switch (position % 4){
+                switch (position % 4) {
                     case 0:
                         return "Basic Info";
                     case 1:
@@ -97,25 +88,23 @@ public class ProfileFragment extends Fragment {
 
 
         mViewPager.setMaterialViewPagerListener(new MaterialViewPager.Listener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public HeaderDesign getHeaderDesign(int page) {
                 switch (page) {
                     case 0:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.colorPrimary,
-                                "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");
+                        return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
+                                getResources().getDrawable(R.drawable.bg_profile));
                     case 1:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.colorPrimary,
-                                "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");
+                        return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
+                                getResources().getDrawable(R.drawable.bg_profile));
                     case 2:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.colorPrimary,
-                                "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");
+                        return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
+                                getResources().getDrawable(R.drawable.bg_profile));
                     case 3:
-                        return HeaderDesign.fromColorResAndUrl(
-                                R.color.colorPrimary,
-                                "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");                }
+                        return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
+                                getResources().getDrawable(R.drawable.bg_profile));
+                }
 
                 //execute others actions if needed (ex : modify your header logo)
 
@@ -123,9 +112,7 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-
-
-        final View logo = (View)view.findViewById(R.id.logo_white);
+        final View logo = (View) view.findViewById(R.id.logo_white);
         if (logo != null) {
             logo.setOnClickListener(new View.OnClickListener() {
                 @Override
