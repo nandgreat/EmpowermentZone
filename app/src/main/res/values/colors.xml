@@ -7,4 +7,5 @@
     <color name="textColorPrimary">#212121</color>
     <color name="textColorSecondary">#757575</color>
     <color name="light_ash">#8C8C8C</color>
+    <color name="green_dark">#229464</color>
 </resources>

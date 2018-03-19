@@ -69,7 +69,7 @@ public class WorkExperience extends Fragment {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                String monthYear = myp.getSelectedMonthName() + " " + myp.getSelectedYear();
+                String monthYear = myp2.getSelectedMonthName() + " " + myp2.getSelectedYear();
                etWorkTo.setText(monthYear);
             }
         }, null);

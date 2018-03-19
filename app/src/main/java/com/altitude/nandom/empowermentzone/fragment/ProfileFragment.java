@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +13,9 @@ import android.widget.Toast;
 import com.altitude.nandom.empowermentzone.R;
 import com.altitude.nandom.empowermentzone.profile_fragment.AdditionalDetails;
 import com.altitude.nandom.empowermentzone.profile_fragment.BasicInfo;
+import com.altitude.nandom.empowermentzone.profile_fragment.Certifications;
+import com.altitude.nandom.empowermentzone.profile_fragment.Education;
+import com.altitude.nandom.empowermentzone.profile_fragment.RefereeFragment;
 import com.altitude.nandom.empowermentzone.profile_fragment.WorkExperience;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
@@ -48,36 +50,44 @@ public class ProfileFragment extends Fragment {
         mViewPager.getViewPager().setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                switch (position % 4) {
+                switch (position % 6) {
                     case 0:
                         return BasicInfo.newInstance();
                     case 1:
                         return AdditionalDetails.newInstance();
                     case 2:
-                        return WorkExperience.newInstance();
+                        return Education.newInstance();
                     case 3:
-                        return BasicInfo.newInstance();
+                        return WorkExperience.newInstance();
+                    case 4:
+                        return Certifications.newInstance();
+                    case 5:
+                        return RefereeFragment.newInstance();
                     default:
-                        return BasicInfo.newInstance();
+                        return Certifications.newInstance();
                 }
             }
 
             @Override
             public int getCount() {
-                return 4;
+                return 6;
             }
 
             @Override
             public CharSequence getPageTitle(int position) {
-                switch (position % 4) {
+                switch (position % 6) {
                     case 0:
                         return "Basic Info";
                     case 1:
                         return "Additional Details";
                     case 2:
-                        return "Work Experience";
+                        return "Education";
                     case 3:
+                        return "Work Experience";
+                    case 4:
                         return "Certifications";
+                    case 5:
+                        return "Referee";
                 }
                 return "";
             }
@@ -102,6 +112,12 @@ public class ProfileFragment extends Fragment {
                         return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
                                 getResources().getDrawable(R.drawable.bg_profile));
                     case 3:
+                        return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
+                                getResources().getDrawable(R.drawable.bg_profile));
+                    case 4:
+                        return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
+                                getResources().getDrawable(R.drawable.bg_profile));
+                    case 5:
                         return HeaderDesign.fromColorAndDrawable(R.color.colorPrimary,
                                 getResources().getDrawable(R.drawable.bg_profile));
                 }

@@ -49,7 +49,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
                                 android:layout_weight="1"
-                                android:text="Redeemer's University"
+                                android:text="Mrs. Elizabeth Chuwang Daniel"
                                 android:textStyle="bold"
                                 android:textColor="@color/colorAccent"
                                 android:textSize="15sp"
@@ -71,20 +71,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="B.Sc. Computer Science"
+                            android:text="Nigerian Railway Corporation, Lagos"
                             android:textSize="13sp"
                             android:textColor="#444"
                             android:textStyle="bold"
                             android:layout_marginRight="10dp"/>
 
-                        <TextView
-                            android:id="@+id/textInputLayout4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="First Class"
-                            android:layout_marginRight="10dp"
-                            android:textSize="12sp"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -95,64 +87,43 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="Jan. 2012"
+                                android:text="07046535276"
                                 android:textSize="12sp"
                                 android:layout_marginRight="5dp">
                             </TextView>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="-"
-                                android:textAlignment="center"
-                                android:textSize="12sp"
-                                android:layout_marginRight="5dp">
-                            </TextView>
-
-                            <TextView
-                                android:id="@+id/textInputLayout7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Dec. 2015"
-                                android:textSize="12sp"
-                                android:layout_marginRight="10dp" />
-                            <TextView
-                                android:id="@+id/textInputLayout14"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="|"
-                                android:textSize="12sp"
-                                android:layout_marginRight="10dp" />
-                            <TextView
-                                android:id="@+id/textInputLayout15"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="3 years"
-                                android:textSize="12sp"
-                                android:layout_marginRight="10dp" />
                         </LinearLayout>
 
+                        <TextView
+                            android:id="@+id/textInputLayout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="elizabethchuwang@gmail.com"
+                            android:textSize="12sp"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+                            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                />
-
-                            <!--<Button-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:backgroundTint="@color/colorAccent"-->
-                            <!--android:text="Delete"-->
-                            <!--android:layout_gravity="right"-->
-                            <!--android:layout_marginRight="10dp"-->
-                            <!--android:textAllCaps="false"-->
-                            <!--android:textColor="@android:color/white"-->
-                            <!--android:drawableLeft="@drawable/ic_delete_black_24dp"/>-->
+                        <TextView
+                            android:id="@+id/textInputLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:text="Unverified"
+                            android:layout_marginRight="10dp"
+                            android:textSize="12sp" />
                         </LinearLayout>
+
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -185,7 +156,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:text="University of Jos"
+                                android:text="Mr. Okonkwo Suleiman"
                                 android:textColor="@color/colorAccent"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
@@ -206,23 +177,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="M. Sc. Software Engineering"
-                            android:textSize="13sp"
+                            android:text="Dangote Group of Companies, Kano"
+                            android:textSize="14sp"
                             android:textColor="#444"
                             android:textStyle="bold"
                             android:layout_marginRight="10dp"/>
-                        <TextView
-                            android:id="@+id/textInputLayout24"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="Distinction"
-                            android:layout_marginRight="10dp"
-                            android:textSize="12sp"
-                            app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
-                            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -234,42 +193,41 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="Oct. 2011"
-                                android:textSize="12sp"
-                                android:layout_marginRight="5dp">
-                            </TextView>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="-"
-                                android:textAlignment="center"
+                                android:text="09022934051, 08059689320"
                                 android:textSize="12sp"
                                 android:layout_marginRight="5dp">
                             </TextView>
 
-                            <TextView
-                                android:id="@+id/textInputLayout17"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Aug. 2016"
-                                android:textSize="12sp"
-                                android:layout_marginRight="10dp" />
-                            <TextView
-                                android:id="@+id/textInputLayout11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="|"
-                                android:textSize="12sp"
-                                android:layout_marginRight="10dp" />
-                            <TextView
-                                android:id="@+id/textInputLayout5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4 years"
-                                android:textSize="12sp"
-                                android:layout_marginRight="10dp" />
                         </LinearLayout>
 
+                        <TextView
+                            android:id="@+id/textInputLayout24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="okonkwosuleiman@yahoo.com"
+                            android:layout_marginRight="10dp"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+                            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"/>
+
+                        <TextView
+                            android:id="@+id/textInputLayout16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Verified"
+                            android:textSize="12sp"
+                            android:textColor="@color/green_dark"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+                            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
